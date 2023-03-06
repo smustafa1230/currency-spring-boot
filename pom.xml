@@ -16,8 +16,11 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<springdoc.version>1.6.7</springdoc.version>
+		<logstash-logback-encoder.version>7.1</logstash-logback-encoder.version>
+		<lombok.version>1.18.20</lombok.version>
+		<fasterxml.jackson.dataformat.version>2.11.1</fasterxml.jackson.dataformat.version>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -34,6 +37,29 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<!-- Swagger import START -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>${springdoc.version}</version>
+		</dependency>
+		<!-- Swagger import END -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+			<version>${logstash-logback-encoder.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+			<version>${fasterxml.jackson.dataformat.version}</version>
 		</dependency>
 	</dependencies>
 

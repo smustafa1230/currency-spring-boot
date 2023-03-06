@@ -51,6 +51,17 @@ The project was generated through the Spring initializer [1] for Java
 ````shell script
 $ mvn spring-boot:run
 ````
+run test using following command
+
+``
+$ mvn test
+``
+#### Swagger
+you can access swagger through root url or with the following url
+
+``
+https://localhost:8080/swagger-ui/index.html
+``
 
 After running, the project, switch to your browser and hit http://localhost:8080/api/currencies. You should see some 
 demo output. 
